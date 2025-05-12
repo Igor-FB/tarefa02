@@ -1,0 +1,44 @@
+Nome: Igor Ferreira Barbosa
+
+mkdir tarefa02-git-igorbarbosa
+cd tarefa02-git-igorbarbosa
+git clone https://gitlab.com/mizael.cortez/curso-branchs-ifrn-ead.git
+ls
+cd curso-branchs-ifrn-ead/
+(criação do arquivo texto.txt)
+git status
+git add texto.txt
+git status
+git commit -m "commit do texto.txt na branch main" (deu erro pelo usuário não está configurado)
+git config user.name IgorBarbosa
+git config user.email ferreira.igor@academico.ifrn.edu.br
+git config --list
+git commit -m "commit do texto.txt na branch main"
+git checkout -b feature-1
+(alteração no texto.txt na linha do tempo feature-1)
+git status
+git commit -am "commit do texto.txt na feature 1"
+git status
+git checkout main
+cat texto.txt
+git merge feature-1
+(não deu erro, alterei em outra linha, irei refazer o procedimento para gerar o erro)
+git switch feature-1
+(alteração no texto.txt na linha do tempo feature-1 novamente)
+git status
+git commit -am "commit do texto.txt na breach feature-1 novamente"
+git switch main
+cat texto.txt
+git merge feature-1
+(não deu erro novamente, irei alterar novamente o arquivo texto.txt na branch feature-1)
+git switch feature-1
+(alteração no texto.txt na linha do tempo feature-1 mais uma vez)
+git status
+git commit -am "commit do texto.txt na branch feature-1 mais uma vez"
+cat texto.txt
+git switch main
+cat texto.txt
+git merge feature-1
+(não deu erro novamente)
+git checkout -b add-comandos
+git add comandos.txt
