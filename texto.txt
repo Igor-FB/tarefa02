@@ -1,2 +1,2 @@
-EmbarcaTech teste
+EmbarcaTeste teste
 Alteração na linha do tempo feature-1
